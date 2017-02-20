@@ -166,6 +166,10 @@
     <ClCompile Include="YouBot.cpp" />
     <ClCompile Include="youbot_try.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="client.py" />
+    <None Include="server.py" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
