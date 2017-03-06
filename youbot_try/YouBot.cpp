@@ -55,3 +55,10 @@ void YouBot::stopBase()
 	_va = 0 * radian_per_second;
 	myYouBotBase->setBaseVelocity(_vx, _vy, _va);
 }
+
+void YouBot::setArmAngle(int arm, float angle)
+{
+	_ang[arm - 1] = angle;
+	desiredJointAngle.angle = angle * radian;
+	myYouBotManipulator->getArmJoint(arm).setData(desiredJointAngle);
+}
